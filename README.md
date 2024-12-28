@@ -1,14 +1,14 @@
 # Chef Mate: Restaurant Clustering & Cooking Guide Application
 
-##Project Overview and Objective
+Project Overview and Objective:
 
 The Chef Mate project is a web-based application designed to solve key challenges in the food and beverage domain. Its primary objective is to provide personalized restaurant recommendations and interactive recipe guidance to enhance the user's dining and cooking experience.
 
-##Problem Statement
+Problem Statement:
 
 The problem revolves around enabling users to discover restaurants that match their preferences (e.g., cuisine, location, cost) while also assisting them in preparing meals through a chatbot. The project tackles the challenges of structuring unorganized data, efficient data preprocessing, and creating a user-friendly application with cloud support.
 
-##Step-by-Step Approach
+Step-by-Step Approach:
 
 1.	Unstructured to Structured Data:
 
