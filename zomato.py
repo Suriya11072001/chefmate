@@ -57,6 +57,24 @@ def cuisine_clustering_page():
         "Select a City",
         options=data['City'].dropna().unique()
     )
+     has_online_delivary=st.sidebar.selectbox(
+        "Has online deliuvary",
+        options=data['Has_Online_delivery'].dropna().unique()
+    )
+    has_table_booking=st.sidebar.selectbox(
+        "Has table booking",
+        options=data['Has_table_booking'].dropna().unique()
+    )
+    selected_rating_text = st.sidebar.selectbox(
+        "Select Rating Text",
+        options=data['Rating_text'].dropna().unique()
+    )
+
+    selected_currency = st.sidebar.selectbox(
+        "Select Currency",
+        options=data['Currency'].dropna().unique()
+    )
+
     # List available cuisine clusters
     # st.markdown("### Available Cuisine Types")
     # available_cuisines = data['Mapped_Cuisines'].str.split(', ').explode().unique()
