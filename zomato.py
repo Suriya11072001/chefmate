@@ -100,6 +100,10 @@ def cuisine_clustering_page():
         # Filter data based on the selected city and cuisine input
         filtered_data = data[
             (data['City'] == selected_city) &
+            (data['Has_Online_delivery']==has_online_delivary)&
+            (data['Has_table_booking']==has_table_booking)&
+            (data['Rating_text'] == selected_rating_text) &
+            (data['Currency'] == selected_currency) &
             (data['Cuisine_Cluster'].isin(matching_clusters))
         ]
 
