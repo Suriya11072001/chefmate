@@ -57,7 +57,7 @@ def cuisine_clustering_page():
         "Select a City",
         options=data['City'].dropna().unique()
     )
-     has_online_delivary=st.sidebar.selectbox(
+    has_online_delivary=st.sidebar.selectbox(
         "Has online deliuvary",
         options=data['Has_Online_delivery'].dropna().unique()
     )
