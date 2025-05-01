@@ -1,41 +1,49 @@
-# Chef Mate: Restaurant Clustering & Cooking Guide Application
+# 🍽️ ChefMate — Restaurant Clustering & Cooking Guide Application
 
-Project Overview and Objective:
+ChefMate is an end-to-end machine learning + interactive chatbot app that combines **restaurant clustering**, **filter-based recommendations**, and a **step-by-step cooking assistant** — designed for food lovers and home chefs alike.
 
-The Chef Mate project is a web-based application designed to solve key challenges in the food and beverage domain. Its primary objective is to provide personalized restaurant recommendations and interactive recipe guidance to enhance the user's dining and cooking experience.
+---
 
-Problem Statement:
+## 🔍 Problem Statement
 
 The problem revolves around enabling users to discover restaurants that match their preferences (e.g., cuisine, location, cost) while also assisting them in preparing meals through a chatbot. The project tackles the challenges of structuring unorganized data, efficient data preprocessing, and creating a user-friendly application with cloud support.
 
-Step-by-Step Approach:
+---
 
-1.	Unstructured to Structured Data:
+## 📦 Project Overview
 
-o	Transform raw JSON restaurant data into a structured format suitable for analysis and model training.
+| Component              | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| 📊 Restaurant Clustering | Groups restaurants using unsupervised learning (KMeans)                    |
+| 🧑‍🍳 Cooking Assistant     | An NLP-style chatbot that guides users step-by-step through recipes        |
+| 🌐 Streamlit App        | A responsive 2-page app for filtering restaurants + chatting with ChefBot  |
+| ☁️ AWS Deployment       | S3 for storage, RDS for structured SQL data, EC2 for deployment             |
 
-2.	Data Cleaning and Preprocessing:
+---
 
-o	Handle missing values, remove duplicates, normalize data, and select relevant features for clustering and visualization.
+## 🛠️ Tech Stack
 
-3.	Machine Learning Model Building:
+- **Python**: Core logic, clustering, and data wrangling
+- **Scikit-learn**: KMeans clustering
+- **Streamlit**: Interactive frontend
+- **AWS S3 / RDS / EC2**: Cloud storage, SQL, and deployment
+- **SQLAlchemy**: Database handling
+- **Pickle**: Model persistence
+- **VS Code**: Dev environment
 
-o	Use clustering techniques (K-Means) to group similar restaurants and evaluate the optimal number of clusters.
+---
 
-4.	Streamlit Application:
+## 🚀 Features
 
-o	Develop an interactive web application for restaurant recommendations and recipe guidance.
+### 🔍 Restaurant Clustering & Filtering
+- Group restaurants by:
+  - Cuisine
+  - Location
+  - Rating
+  - Price range
+- Dynamically filter and explore results via dropdowns and sliders
 
-5.	Cooking Assistance Chatbot:
-
-o	AI-powered chatbot integrated for providing detailed recipe guidance and cooking tips.
-
-6.	AWS Cloud Integration:
-
-o	Utilize AWS services for data storage, database management, and application hosting: 
-
-	S3: Store and retrieve raw and cleaned datasets.
-
-	RDS: Maintain structured restaurant data for queries.
-
-	EC2: Host the Streamlit application for real-time access
+### 🤖 Chatbot Cooking Guide
+- Step-by-step guidance through recipes
+- Responds to prompts like "start cooking", "what’s next?", "repeat step"
+- Makes home cooking easier and interactive
